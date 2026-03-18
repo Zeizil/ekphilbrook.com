@@ -9,30 +9,46 @@
 
 <body class="bg-indigo-950 text-slate-100 font-sans">
   <!-- Navbar -->
-  <header class="border-b border-slate-800">
-    <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-      <a href="#" class="text-lg font-semibold tracking-wide">Elizabeth Philbrook</a>
-      <div class="space-x-6 text-sm">
-        <a href="#projects" class="hover:text-sky-300 transition">Projects</a>
-        <a href="#skills" class="hover:text-sky-300 transition">Skills</a>
-        <a href="#about" class="hover:text-sky-300 transition">About</a>
-        <a href="#contact" class="hover:text-sky-300 transition">Contact</a>
-      </div>
-    </nav>
-  </header>
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-slate-800 bg-indigo-950/75 backdrop-blur-md">
+  <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="#" class="text-lg font-semibold tracking-wide">Elizabeth Philbrook</a>
+    <div class="space-x-6 text-sm">
+      <a href="#projects" class="hover:text-sky-300 transition">Projects</a>
+      <a href="#skills" class="hover:text-sky-300 transition">Skills</a>
+      <a href="#about" class="hover:text-sky-300 transition">About</a>
+      <a href="#contact" class="hover:text-sky-300 transition">Contact</a>
+    </div>
+  </nav>
+</header>
 
-  <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  
+  <!-- BACKGROUND GIF -->
+  <div class="absolute inset-0">
+    <img 
+      src="mountains and lake.gif"
+      alt="Background animation"
+      class="w-full h-full object-cover"
+    />
+    <!-- Dark overlay for readability -->
+    <div class="absolute inset-0 bg-slate-950/70"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-32">
     <div class="max-w-3xl">
       <p class="text-sky-300 text-sm font-medium mb-4">Software Developer</p>
+      
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
         I build practical, well-structured software with a focus on usability and clean implementation.
       </h1>
+      
       <p class="text-slate-300 text-lg leading-relaxed mb-8">
         I have a background in computer science and hands-on experience with full-stack development,
-        technical support, database-driven applications, and cloud tools. I enjoy solving real problems,
-        improving workflows, and building software that is clear, reliable, and useful.
+        technical support, database-driven applications, and cloud tools.
       </p>
+
       <div class="flex flex-wrap gap-4">
         <a href="#projects" class="bg-sky-400/75 text-slate-950 px-6 py-3 rounded-lg font-medium hover:bg-sky-300 transition">
           View Projects
@@ -42,7 +58,9 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
+
+</section>
 
   <!-- Projects -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
@@ -66,14 +84,13 @@
           HTML, CSS, JavaScript, Node.js, React, REST APIs
         </p>
         <div class="flex gap-4 text-sm">
-          <a href="#" class="text-sky-300 hover:underline">GitHub</a>
-          <a href="#" class="text-sky-300 hover:underline">Live Demo</a>
+          <a href="https://github.com/average-android/CookingRepo" class="text-sky-300 hover:underline">GitHub</a>
         </div>
       </article>
 
       <!-- Project 2 -->
       <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-        <h3 class="text-xl font-semibold mb-3">Association Website and Payment Update</h3>
+        <h3 class="text-xl font-semibold mb-3">Pine River Association Website and Payment Update</h3>
         <p class="text-slate-300 leading-relaxed mb-4">
           Updated a local association website to improve navigation and make online payments more convenient.
           The work involved balancing technical changes with practical user needs and making the site more accessible for everyday use.
@@ -82,20 +99,19 @@
           HTML, CSS, JavaScript, UX improvements, website maintenance
         </p>
         <div class="flex gap-4 text-sm">
-          <a href="#" class="text-sky-300 hover:underline">GitHub</a>
-          <a href="#" class="text-sky-300 hover:underline">Live Site</a>
+          <a href="https://www.pineriverassociation.net/" class="text-sky-300 hover:underline">Live Site</a>
         </div>
       </article>
 
       <!-- Project 3 -->
       <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-        <h3 class="text-xl font-semibold mb-3">Cloud and Full-Stack Development Projects</h3>
+        <h3 class="text-xl font-semibold mb-3">Battleship Coursework Project</h3>
         <p class="text-slate-300 leading-relaxed mb-4">
-          Completed hands-on projects through technical coursework and certification training focused on full-stack development,
-          version control, scalable application structure, and cloud-based deployment concepts.
+          A hands-on capstone project for a computer science course, where I built a web-based version of the classic Battleship game.
+          This project involved implementing game logic, creating an interactive user interface, and ensuring a smooth user experience.
         </p>
         <p class="text-sm text-slate-400 mb-5">
-          JavaScript, React, Node.js, Git/GitHub, Microsoft Azure
+          Python, UI design, game logic, user experience
         </p>
         <div class="flex gap-4 text-sm">
           <a href="#" class="text-sky-300 hover:underline">GitHub</a>
